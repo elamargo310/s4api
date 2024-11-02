@@ -1,0 +1,13 @@
+import pyodbc
+
+
+dados_conexao = (
+
+    "Driver={SQL Server};"
+    "Server='WEBSERVER';"
+    "Database='TESTE_BD';"
+)
+
+conexao = pyodbc.connect(dados_conexao)
+
+print("Conectado")
